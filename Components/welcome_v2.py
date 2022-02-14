@@ -4,8 +4,6 @@ from random import randint
 #List of names of the people who will greet the customers
 names = ["Shawn", "Karlo", "Louis", "Jodek", "Carlos", "Mikara", "Tomas", "Giancarlo", "Joaquin", "Jacob"]
 
-
-
 #creates a function which is "welcome"
 def welcome ():
     '''
