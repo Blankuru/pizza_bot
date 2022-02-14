@@ -24,7 +24,7 @@ def welcome ():
     #prints that he/she will be helping with the customer's order
     print ("***I will be here to help your order your delicous Dream Pizza***")
 
-#creates a 
+
 def main():
     '''
     Purpose: To generate a random name from the list and print out a welcome message
