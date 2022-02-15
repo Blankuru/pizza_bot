@@ -12,15 +12,16 @@ high = 2
 
 while True:
     try:
-        delivery = int(input("Please enter a number")) # The space that the customer will have to input in
-            
-        if delivery == 1: #if the customer presses d for delivery
+        delivery = int(input("Please enter a number ")) # The space that the customer will have to input in
+        if delivery >= 1 and delivery <= 2:
+            if delivery == 1: #if the customer presses d for delivery
             print ("Pickup")
             break
 
         elif delivery == 2: #if the customer presses p for pickup
             print ("Delivery")
             break
+        
 
     except ValueError:
         print ("That is not a valid number")
