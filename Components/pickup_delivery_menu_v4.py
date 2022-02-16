@@ -5,6 +5,7 @@ print ("Do you want your order to be delivered or picked up?")
 
 print ("For pickup please enter 1") 
 print ("For delivery please enter 2")
+print ("")
 
 
 low = 1
@@ -28,3 +29,5 @@ while True:
         print ("That is not a valid number")
         print ("")
         print ("Please pick a number between 1 or 2")
+
+    
