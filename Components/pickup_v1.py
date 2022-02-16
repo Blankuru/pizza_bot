@@ -1,3 +1,4 @@
+#Bug - accepts blank input
 
 print ("Please enter your pickup information")
 
