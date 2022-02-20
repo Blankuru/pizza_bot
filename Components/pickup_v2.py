@@ -25,6 +25,3 @@ while not valid:
     else:
         print ("Sorry this cannot be blank")
 
-
-print (name)
-print (phone)
