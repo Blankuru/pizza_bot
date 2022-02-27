@@ -3,8 +3,25 @@
 import random
 from random import randint
 
-#List of names of the people who will greet the customers
+# List of names of the people who will greet the customers
 names = ["Shawn", "Karlo", "Louis", "Jodek", "Carlos", "Mikara", "Tomas", "Giancarlo", "Joaquin", "Jacob"]
+
+
+# Customer details
+customer_details = {}
+
+
+# validates input to check if they are blank
+def not_blank(question):
+    valid = False
+    while not valid:
+        response = input (question) #asks the question
+        if response != "":
+            return response.title()
+        else:
+            print ("This cannot be blank")
+
+
 
 # Welcome message with random names from the list
 def welcome ():
@@ -46,8 +63,8 @@ def pdmenu():
             if delivery >= 1 and delivery <= 2:
                 if delivery == 1: #if the customer presses d for delivery
                     print ("Pickup")
+                    pickup()
                     break
-
                 elif delivery == 2: #if the customer presses p for pickup
                     print ("Delivery")
                     break
@@ -62,6 +79,17 @@ def pdmenu():
     
 
 # Pick up information - Name and Phone number
+
+def pickup():
+    question = ("Please enter your name: ") # Question
+    customer_details['name'] = not_blank(question) # goes off with the function not_blank with the question
+    #print (customer_details['name'])     
+
+
+    question = ("Please enter your phone number: ")
+    customer_details['phone'] = not_blank(question)
+    #print (customer_details['phone'])  
+    print(customer_details)
 
 
 # Delivery Information - Name, Adress, Phone
@@ -93,5 +121,6 @@ def main():
     '''
     welcome()
     pdmenu()
+    
 
 main()
