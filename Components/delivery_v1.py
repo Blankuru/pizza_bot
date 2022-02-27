@@ -10,10 +10,6 @@ def not_blank(question):
         else:
             print ("This cannot be blank")
 
-
-
-
-
 # Basic instruction
 
 #Customer name
