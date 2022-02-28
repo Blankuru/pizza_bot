@@ -66,10 +66,11 @@ def pdmenu():
             if delivery >= 1 and delivery <= 2:
                 if delivery == 1: #if the customer presses d for delivery
                     print ("Pickup")
-                    pickup()
+                    pickup_info()
                     break
                 elif delivery == 2: #if the customer presses p for pickup
                     print ("Delivery")
+                    delivery_info()
                     break
             else:
                 print ("The number must be 1 or 2")
@@ -83,7 +84,7 @@ def pdmenu():
 
 # Pick up information - Name and Phone number
 
-def pickup():
+def pickup_info():
     question = ("Please enter your name: ") # Question
     customer_details['name'] = not_blank(question) # goes off with the function not_blank with the question
     #print (customer_details['name'])     
@@ -96,6 +97,35 @@ def pickup():
 
 
 # Delivery Information - Name, Adress, Phone
+
+
+# Basic instruction
+
+def delivery_info():
+#Customer name
+    question = ("Please enter your name: ") # Question
+    customer_details['name'] = not_blank(question) # goes off with the function not_blank with the question
+    print (customer_details['name'])     
+
+    #Customer Phone
+    question = ("Please enter your phone number: ")
+    customer_details['phone'] = not_blank(question)
+    print (customer_details['phone'])  
+
+    #Customer house number
+    question = ("Please enter your house number: ")
+    customer_details['house'] = not_blank(question)
+    print (customer_details['house'])  
+
+    #Customer street name
+    question = ("Please enter your street name: ")
+    customer_details['street'] = not_blank(question)
+    print (customer_details['street'])  
+
+    #Customer suburb
+    question = ("Please enter your suburb: ")
+    customer_details['suburb'] = not_blank(question)
+    print (customer_details['suburb']) 
 
 
 # Choose total number of pizzas - max 5
