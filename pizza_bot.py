@@ -3,11 +3,20 @@
 #      - Name input allows numbers
 
 
+
 import random
 from random import randint
 
 # List of names of the people who will greet the customers
 names = ["Shawn", "Karlo", "Louis", "Jodek", "Carlos", "Mikara", "Tomas", "Giancarlo", "Joaquin", "Jacob"]
+
+
+#Lists of pizza names
+pizza_names = ['Margherita', 'Pepperoni','Hawaiian','Cheese','Italian','Veggie','Vegan','Chicken Deluxe',
+                'Mega Meat Lovers','Seafood Deluxe','Apricot Chicken Deluxe','BBQ Chicken Deluxe']
+
+#Lists of pizza prices
+pizza_prices = [8.50, 8.50, 8.50, 8.50, 8.50, 8.50, 8.50, 13.50, 13.50, 13.50, 13.50, 13.50]
 
 
 # Customer details
@@ -99,6 +108,9 @@ def pickup_info():
 # Delivery Information - Name, Adress, Phone
 
 
+
+
+
 # Basic instruction
 
 def delivery_info():
@@ -131,19 +143,42 @@ def delivery_info():
 # Choose total number of pizzas - max 5
 
 
+
+
 # Pizza Menu
+
+def menu():
+    number_pizzas = 12
+
+    for count in range (number_pizzas):
+        print ("{} {} ${:.2f}" .format(count+1, pizza_names[count], pizza_prices[count]))
 
 
 # Pizza order - from menu - print each ordered with cost
 
 
+
+
+
 # Print order out - incl. of order is delivery or pickup and names and price of each pizza - total cost incl. any delivery charge 
+
+
+
+
 
 
 # Ability to cancel or proceed the order
 
 
+
+
+
+
 # Option for a new order or exit
+
+
+
+
 
 # Main function
 def main():
@@ -154,6 +189,7 @@ def main():
     '''
     welcome()
     pdmenu()
+    menu()
     
 
 main()
