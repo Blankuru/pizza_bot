@@ -18,6 +18,11 @@ pizza_names = ['Margherita', 'Pepperoni','Hawaiian','Cheese','Italian','Veggie',
 #Lists of pizza prices
 pizza_prices = [8.50, 8.50, 8.50, 8.50, 8.50, 8.50, 8.50, 13.50, 13.50, 13.50, 13.50, 13.50]
 
+#list to store ordered pizzas
+order_list = []
+
+#list to store pizza prices
+order_cost = []
 
 # Customer details
 customer_details = {}
@@ -152,11 +157,7 @@ def menu():
 
 # Choose total number of pizzas - max 5
 # Pizza order - from menu - print each ordered with cost
-#list to store ordered pizzas
-order_list = []
 
-#list to store pizza prices
-order_cost = []
 
 
 def order_pizza():
